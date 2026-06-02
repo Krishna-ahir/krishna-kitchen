@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<section class="hero">
+    <div class="hero-content">
+        <h4>WELCOME TO KRISHNA'S KITCHEN</h4>
+        <div class="divider"></div>
+        <h1>Serving delicious local food</h1>
+        <a href="/menu" class="btn">View Menu</a>
+    </div>
+</section>
+
+<section class="our-story">
+    <div class="story-text">
+        <h2>Our Story</h2>
+
+        <p>
+            Welcome to Krishna's Kitchen, where every dish is made with passion and love.
+            Our journey started with a simple idea — to serve fresh, hygienic, and
+            delicious food that reminds you of home.
+        </p>
+
+        <p>
+            We carefully select high-quality ingredients and prepare every meal
+            with traditional recipes and modern techniques. Whether it's a spicy
+            Punjabi curry, crispy dosa, or flavorful biryani, we bring authentic
+            taste to your plate.
+        </p>
+
+        <p>
+            Our mission is not just to serve food, but to create an experience.
+            From the warm ambiance to the rich flavors, we ensure every visit
+            feels special.
+        </p>
+
+        <a href="/about" class="btn mt-3">Read More</a>
+    </div>
+
+    <div class="story-image">
+        <img src="{% static 'images/our story1.jpg' %}">
+    </div>
+</section>
+
+{% endblock %}

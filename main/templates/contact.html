@@ -1,0 +1,85 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="contact-bg">
+
+    <div class="contact-container">
+
+        <!-- Contact Form -->
+        <div class="contact-box">
+
+            <h2>Contact Us</h2>
+
+            <form method="POST">
+                {% csrf_token %}
+
+                <input type="text"
+                       class="form-control mb-3"
+                       placeholder="Your Name">
+
+                <input type="email"
+                       class="form-control mb-3"
+                       placeholder="Your Email">
+
+                <input type="text"
+                       class="form-control mb-3"
+                       placeholder="Phone Number">
+
+                <textarea class="form-control mb-3"
+                          rows="5"
+                          placeholder="Your Message"></textarea>
+
+                <button type="submit" class="send-btn">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Contact Info -->
+        <div class="info-box">
+
+            <h2>Get In Touch</h2>
+
+            <div class="info-item">
+                <h5>📍 Address</h5>
+                <p>Rajkot, Gujarat, India</p>
+            </div>
+
+            <div class="info-item">
+                <h5>📞 Phone</h5>
+                <p>+91 98765 43210</p>
+            </div>
+
+            <div class="info-item">
+                <h5>✉ Email</h5>
+                <p>krishna@kitchen.com</p>
+            </div>
+
+            <div class="info-item">
+                <h5>🕒 Opening Hours</h5>
+                <p>10:00 AM - 11:00 PM</p>
+            </div>
+
+            <div class="map-box">
+
+                <iframe
+                    src="https://maps.google.com/maps?q=Rajkot&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    width="100%"
+                    height="250"
+                    style="border:0;"
+                    loading="lazy">
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

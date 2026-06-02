@@ -1,0 +1,437 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: #f8f5f2;
+    color: #333;
+    overflow-x: hidden;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: rgba(75, 46, 46, .9);
+
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.logo span {
+    display: block;
+    font-size: .7rem;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: .3s;
+}
+nav ul li a:hover
+
+/* PAGE HEADER  */
+
+.page-header {
+    height: 350px;
+    background:
+        linear-gradient(rgba(0, 0, 0, .6),
+            rgba(0, 0, 0, .6)),
+        url('/static/images/page-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+
+.page-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+}
+
+.page-header p {
+    color: #f5deb3;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* HOME HERO */
+
+.hero {
+    height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, .6),
+            rgba(0, 0, 0, .6)),
+        url('/static/images/pizza.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* BUTTONS */
+
+.btn,
+.brown-btn,
+.order-btn,
+.send-btn,
+.book-btn {
+    display: inline-block;
+    background: #8b5e3c;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    text-decoration: none;
+    transition: .3s;
+
+}
+
+.btn:hover,
+.brown-btn:hover,
+.order-btn:hover,
+.send-btn:hover,
+.book-btn:hover {
+    background: #6f4e37;
+    color: white;
+}
+
+/* OUR STORY */
+
+.our-story {
+    display: flex;
+    align-items: center;
+    padding: 100px 10%;
+    gap: 50px;
+
+}
+
+.story-text {
+    flex: 1;
+}
+
+.story-text h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    line-height: 1.8;
+}
+
+.story-image {
+    flex: 1;
+    text-align: center;
+}
+
+.story-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* ========================================
+ABOUT PAGE
+======================================== */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    gap: 50px;
+
+}
+
+.about-section.reverse {
+    flex-direction: row-reverse;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+    color: #4b2e2e;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    line-height: 1.8;
+}
+
+.about-img {
+    flex: 1;
+    text-align: center;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+}
+
+/* ========================================
+MENU PAGE
+======================================== */
+
+.cuisine-title {
+    text-align: center;
+    margin-top: 40px;
+    color: #4b2e2e;
+}
+
+.category-title {
+    margin-top: 25px;
+    color: #8b5e3c;
+}
+
+.accordion-button {
+    background: #8b5e3c;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #4b2e2e;
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.menu-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
+    transition: .3s;
+
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.price {
+    font-weight: bold;
+    color: #8b5e3c;
+    margin-top: 10px;
+}
+
+/* VEG / NONVEG ICON */
+
+.veg-icon {
+    width: 12px;
+    height: 12px;
+    border: 2px solid green;
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+.nonveg-icon {
+    width: 12px;
+    height: 12px;
+    border: 2px solid red;
+    display: inline-block;
+    margin-right: 5px;
+
+}
+
+/* ========================================
+CONTACT PAGE
+======================================== */
+
+.contact-bg{
+    min-height:100vh;
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+    url('/static/images/contact.jpg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    padding:120px 40px;
+}
+
+.contact-container{
+    display:flex !important;
+    gap:40px !important;
+    max-width:1200px !important;
+    margin:auto !important;
+}
+
+.contact-box,
+.info-box{
+    flex:1 !important;
+    background:white !important;
+    padding:35px !important;
+    border-radius:20px !important;
+    box-shadow:0 10px 25px rgba(0,0,0,.15) !important;
+}
+
+.contact-box h2,
+.info-box h2 {
+    color: #4b2e2e;
+    margin-bottom: 20px;
+}
+
+.contact-box input,
+.contact-box textarea {
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item h5 {
+    color: #8b5e3c;
+}
+
+.map-box {
+    overflow: hidden;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* ========================================
+BOOKING PAGE
+======================================== */
+
+.booking-bg {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0, 0, 0, .6),
+            rgba(0, 0, 0, .6)),
+        url('/static/images/booking.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 20px;
+
+}
+
+.booking-box {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .3);
+
+}
+
+.booking-box h2 {
+    color: #4b2e2e;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.booking-box input,
+.booking-box select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+}
+
+/* ========================================
+FOOTER
+======================================== */
+
+.footer {
+    background: #4b2e2e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+
+}
+
+/* ========================================
+RESPONSIVE
+======================================== */
+
+@media(max-width:768px) {
+
+
+    header {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .our-story,
+    .about-section,
+    .contact-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page-header h1 {
+        font-size: 40px;
+    }
+
+}

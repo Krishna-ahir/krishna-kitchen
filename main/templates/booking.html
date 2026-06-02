@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+{% block content %}
+
+<div class="booking-bg">
+
+    <div class="booking-box">
+
+        <h2 class="text-center">Book a Table 🍽</h2>
+
+        <form method="POST">
+            {% csrf_token %}
+
+            {{ form.name|add_class:"form-control" }}
+            {{ form.email|add_class:"form-control" }}
+            {{ form.phone|add_class:"form-control" }}
+            {{ form.date|add_class:"form-control" }}
+            {{ form.time|add_class:"form-control" }}
+            {{ form.people|add_class:"form-control" }}
+
+            <button class="btn brown-btn w-100 mt-3">Book Now</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+{% endblock %}

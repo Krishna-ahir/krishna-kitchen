@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <h2>Order {{ item.name }}</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <input
+            type="text"
+            name="name"
+            class="form-control mb-3"
+            placeholder="Your Name"
+        >
+
+        <input
+            type="text"
+            name="phone"
+            class="form-control mb-3"
+            placeholder="Phone Number"
+        >
+
+        <textarea
+            name="address"
+            class="form-control mb-3"
+            placeholder="Delivery Address"
+        ></textarea>
+
+        <input
+            type="number"
+            name="quantity"
+            value="1"
+            class="form-control mb-3"
+        >
+
+        <button class="btn brown-btn">
+            Place Order
+        </button>
+
+    </form>
+
+</div>
+
+{% endblock %}

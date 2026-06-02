@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Our Menu 🍽</h1>
+
+    {% for cuisine in cuisines %}
+    <div class="menu-block">
+
+        <h2 class="cuisine-title">
+            <i class="fa-solid fa-utensils"></i> {{ cuisine.name }}
+        </h2>
+
+        {% for category in cuisine.category_set.all %}
+        <h4 class="category-title">
+            <i class="fa-solid fa-bowl-food"></i> {{ category.name }}
+        </h4>
+
+        <div class="row">
+            {% for item in category.menuitem_set.all %}
+
+            <div class="col-md-4 mb-4">
+                <div class="menu-card">
+
+                    <h5>
+                        {% if item.veg_type == "Veg" %}
+                            <i class="fa-solid fa-circle text-success"></i>
+                        {% else %}
+                            <i class="fa-solid fa-circle text-danger"></i>
+                        {% endif %}
+                        {{ item.name }}
+                    </h5>
+
+                    <p>{{ item.description }}</p>
+
+                    <div class="price">
+                        ₹{{ item.price }}
+                    </div>
+
+                    <a href="{% url 'order_item' item.id %}" class="btn brown-btn">
+    Order Now
+</a>
+
+                </div>
+            </div>
+
+            {% endfor %}
+        </div>
+
+        {% endfor %}
+
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
