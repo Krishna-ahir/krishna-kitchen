@@ -3,56 +3,88 @@
 
 {% block content %}
 
-<div class="container mt-5 text-center">
-    <h1>About Us 🍽</h1>
-    <p>Experience the taste of tradition and quality.</p>
-</div>
-
-<!-- Section 1 -->
-<div class="about-section">
-     <div class="about-img">
-        <img src="{% static 'images/our story.jpg' %}">
-    </div>
-    <div class="about-text">
-        <h3>Our Story</h3>
-        <p>At Krishna's Kitchen, our journey began with a simple dream: to serve delicious, fresh, and authentic food that brings people together. 
-        What started as a passion for cooking traditional recipes has grown into a place where families and friends can enjoy memorable meals. 
-        Every dish we prepare is made with care, using quality ingredients and recipes inspired by rich culinary traditions. 
-        Our goal is not only to serve food but also to create a warm and welcoming dining experience for every guest who visits us.
+<div class="container text-center py-5">
+    <h1 class="display-4 fw-bold">
+        <i class="fa-solid fa-utensils "></i>
+        About Us</h1>
+    <p class="lead text-muted">
+        Experience the taste of tradition and quality.
     </p>
-    </div>
-   
 </div>
+<div class="container py-5">
 
-<!-- Section 2 -->
-<div class="about-section reverse">
-    <div class="about-img">
-        <img src="{% static 'images/our mission.jpg' %}">
-    </div>
-    <div class="about-text">
-        <h3>Our Mission</h3>
-        <p>Our mission is to provide exceptional food and outstanding service while maintaining the highest standards of quality and hygiene.
-           We believe that great food starts with fresh ingredients, careful preparation, and a dedication to excellence.
-           Krishna's Kitchen is committed to offering a wide variety of flavors that satisfy every taste while ensuring that every meal is prepared with passion and attention to detail.
-           We strive to make every visit enjoyable, affordable, and unforgettable. 
-        </p>
-    </div>
-</div>
 
-<!-- Section 3 -->
-<div class="about-section">
-    <div class="about-img">
-        <img src="{% static 'images/why choose us.jpg' %}">
+    <!-- Section 1 -->
+
+    <div class="row align-items-center g-4">
+
+        <div class="col-lg-6">
+            <img src="{% static 'images/our story.jpg' %}" class="img-fluid rounded shadow" alt="Our Story">
+        </div>
+
+        <div class="col-lg-6">
+            <h3> <i class="fa-solid fa-book-open"></i> Our Story</h3>
+            <p>
+                At Krishna's Kitchen, our journey began with a simple dream: to serve delicious, fresh, and authentic
+                food that brings people together.
+                What started as a passion for cooking traditional recipes has grown into a place where families and
+                friends can enjoy memorable meals.
+                Every dish we prepare is made with care, using quality ingredients and recipes inspired by rich culinary
+                traditions.
+                Our goal is not only to serve food but also to create a warm and welcoming dining experience for every
+                guest who visits us.
+            </p>
+        </div>
+
     </div>
-    <div class="about-text">
-        <h3>Why Choose Us?</h3>
-        <p>Krishna's Kitchen is more than just a restaurant—it's a place where taste, quality, and hospitality come together.
-           We use fresh ingredients, authentic spices, and proven recipes to deliver food that is both flavorful and satisfying.
-           Our friendly staff, clean environment, diverse menu, and commitment to customer satisfaction make us a preferred choice for food lovers.
-           Whether you're joining us for a family dinner, a special celebration, or a quick meal with friends, we work hard to ensure that every experience exceeds your expectations. 
-        </p>
+
+    <!-- Section 2 -->
+
+    <div class="row align-items-center g-4">
+
+        <div class="col-lg-6">
+            <h3> <i class="fa-solid fa-bullseye"></i> Our mission</h3>
+            <p>
+                Our mission is to provide exceptional food and outstanding service while maintaining the highest
+                standards of quality and hygiene.
+                We believe that great food starts with fresh ingredients, careful preparation, and a dedication to
+                excellence.
+                Krishna's Kitchen is committed to offering a wide variety of flavors that satisfy every taste while
+                ensuring that every meal is prepared with passion and attention to detail.
+                We strive to make every visit enjoyable, affordable, and unforgettable.
+            </p>
+        </div>
+        
+        <div class="col-lg-6">
+            <img src="{% static 'images/our mission.jpg' %}" class="img-fluid rounded shadow" alt="Our mission">
+        </div>
+
+
     </div>
-    
+
+    <!-- Section 3 -->
+
+    <div class="row align-items-center g-4">
+
+        <div class="col-lg-6">
+            <img src="{% static 'images/why choose us.jpg' %}" class="img-fluid rounded shadow" alt="why choose us">
+        </div>
+
+        <div class="col-lg-6">
+            <h3>   <i class="fa-solid fa-star"></i> why choose us</h3>
+            <p>
+                Our mission is to provide exceptional food and outstanding service while maintaining the highest
+                standards of quality and hygiene.
+                We believe that great food starts with fresh ingredients, careful preparation, and a dedication to
+                excellence.
+                Krishna's Kitchen is committed to offering a wide variety of flavors that satisfy every taste while
+                ensuring that every meal is prepared with passion and attention to detail.
+                We strive to make every visit enjoyable, affordable, and unforgettable.
+            </p>
+        </div>
+
+    </div>
+
 </div>
 
 {% endblock %}
